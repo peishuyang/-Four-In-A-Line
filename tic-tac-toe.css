@@ -1,0 +1,230 @@
+/*  // Xie Bingshan, 
+  // Wang Tingting,
+  // Pei Shuyang */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14pt;
+	margin: 50px 100px 0px 100px;
+	background: #99BBFF;
+}
+
+form {
+	text-align: center;
+}
+
+table {
+	cellspacing:;
+	border: 1;
+}
+
+#right {
+	float:right;
+	margin-right: 100px;
+}
+
+#right > div {
+	text-align: center;
+	border: solid 5px gray;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 5px;
+	background: white;
+}
+
+#names img {
+	width: 40px;
+	vertical-align: middle;
+}
+
+#names input {
+	border: solid 1px gray;
+	border-radius: 5px;
+	font-size: 12pt;
+	width: 150px;
+}
+
+#start {
+	margin-top: 10px;	
+}
+
+#start button {
+	margin-top: 10px;
+}
+
+.dialog {
+	visibility: hidden;
+}
+
+#final {
+	margin-top: 10px;
+}
+
+#msg {
+	color: red;
+}
+#grid {
+	margin-left: 30px;
+
+}
+#start, #final {
+	visibility: hidden;
+}
+
+.is_disabled {
+    opacity: .3;
+    pointer-events: none;
+}
+
+h1{
+	font-size: 50px;
+}
+
+#menu, #new_game{
+	top: 10px; 
+	height: 20px; 
+    position: absolute; 
+	border:0px; 
+	padding:0px; 
+	background:transparent; 
+	color:#000000; 
+	text-align:center; 
+	line-height:20px; 
+	text-decoration:none; 
+	font-family:arial; 
+	font-size:12px; 
+	z-index:2;
+}
+#menu {
+	left: 110px; 	
+	width: 65px; 
+}
+
+#new_game {
+	left:8px; 
+	width:110px;  
+}
+
+#options,#options_shadow {
+	width:340px; 
+	height:240px; 
+	position:absolute; 
+	border:0px; 
+	padding:0px; 
+	background:#efefdd; 
+	color:#333333; 
+	text-align:left; 
+	line-height:20px; 
+	text-decoration:none; 
+	font-family:verdana; 
+	font-size:10px; 
+	opacity: 0.7; 
+	cursor: crosshair; 
+}
+#options{
+	left:40px; 
+	top:50px; 	
+	z-index: 5;
+}
+
+#options_shadow{
+	left:44px; 
+	top:54px; 
+	z-index:4;
+}
+
+#x, #first_player_in_option {
+	position: absolute; 
+	cursor: pointer; 
+	cursor: hand; 
+}
+#x {
+	left: 312px; 
+	top: 2px; 
+}
+
+#aform{
+	left:20px; 
+	top:20px; 
+	position: absolute; 
+	cursor: crosshair;
+}
+
+#pvcform{
+	display: inline;
+}
+#setform{
+	width: 280px; 
+	cursor: crosshair;
+}
+
+#pvc_legend1{
+	width: 280px; 
+	color: #aa0000; 
+	font-size: 20px; 
+	font-weight: bold; 
+	text-align: center; 
+}
+#set_board_width, #set_board_height {
+	line-height: 12px; 
+	font-size: 12px; 
+	cursor: pointer; 
+	cursor: hand;
+}
+#board_width, #board_height {
+	height: 22px; 
+	color: #0000aa; 
+	background: #ffffdd; 
+	font-family: courier; 
+	line-height: 12px; 
+	font-size: 12px; 
+	font-weight: bold;
+}
+#choose_1player{
+	line-height:12px; 
+	font-size:12px; 
+	cursor:pointer; 
+	cursor:hand;
+}
+
+#button_apply{
+	height:24px; 
+	color:#aa0000; 
+	font-weight:bold; 
+	text-align:center; 
+	line-height:12px; 
+	font-size:12px; 
+	font-family:arial; 
+	cursor:pointer; 
+	cursor:hand; 
+}
+.little_grid{
+	position:relative; 
+	width:62px ; 
+	height:62px ;
+}
+
+.grid_invisible{
+	position:absolute;
+	left:0;
+	top:0 ;  
+	width:62px ; 
+	height:62px ;
+	z-index:2 ;
+}
+.grid_img{
+	position:absolute;
+	left:0;
+	top:0 ; 
+	z-index:1
+}
+.invisibles{
+	visibility: hidden;
+}
+.visibles{
+	visibility: visible;
+}
+
+.no_use{
+	pointer-events: none;
+}
+

@@ -1,0 +1,61 @@
+/*  // Xie Bingshan, 
+  // Wang Tingting,
+  // Pei Shuyang */
+
+h9{
+	color: blue;
+	/*text-align: center;*/
+	margin-left: 160px;
+	font-family: Arial, sans-serif;
+	font-size: 50pt;
+	font-weight: bold;
+    height: 150px;
+	-webkit-text-stroke: 1px #000;
+	-webkit-text-fill-color: transparent;
+}
+
+p{
+	text-align: center;
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
+}
+
+a{
+	
+	border: solid 2px silver;
+	border-radius: 5px;
+	font-size: 40pt;
+	width: 150px;
+	color: blue;
+	font-family: Arial, sans-serif;
+	font-size: 20pt;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+
+body{
+	background-image: url("back.png");
+}
+
+
+#right {
+	float:right;
+	padding-right: 300px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 400px;
+}
+
+#left{
+	float: right;
+	padding-left: 200px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#fish{
+	padding-bottom: 0px;
+	padding-top: 0pt;
+}
+

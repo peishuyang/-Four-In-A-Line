@@ -1,0 +1,102 @@
+<!-- Xie Bingshan, 
+  Wang Tingting,
+  Pei Shuyang -->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>connect four</title>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/tic-tac-toe.css" />
+    <script type="text/javascript" src="js/tic-tac-toe player.js"></script>
+  </head>
+<body>
+
+<h1>CONNECT FOUR</h1>
+
+<div id="right"> 
+  <div id="names">
+    <h3>Enter the player names</h3>
+    <img src="B.png" alt="B" /><input id="player1" type="text" /><br />
+    <img src="W.png" alt="W" /><input id="player2" type="text" /><br />
+    <button id="set_players" onclick="set_players();">OK</button>
+  </div>
+  <div id="start">
+    <h3>Who starts the game?</h3>
+    <input type="radio" name="who" checked="checked" /><span id="first_player"></span>
+    <input id="check_second" type="radio" name="who" /><span id="second_player"></span><br />
+    <button id="start_game" onclick="start_game();">OK</button>
+  </div>
+  <div id="final">
+    <h3 id="winner"></h3>
+    Do you want to play again?<br />
+    <button id="play_again" onclick="play_again();">Yes</button>
+    <button id="quit" onclick="quit();">No</button>
+  </div>  
+</div>
+<?php
+     $img=array();
+?>
+<div id="grid">
+<table cellspacing="0" border="1" cellpadding="0">
+  <tbody>
+    <tr>
+      <td><img align="center" src="white.png" onclick="click_at(0,0,this)" ></td>
+      <td><img align="center" src="white.png" onclick="click_at(0,1,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(0,2,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(0,3,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(0,4,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(0,5,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(0,6,this)"></td>
+   </tr>
+    <tr>
+      <td><img align="center" src="white.png" onclick="click_at(1,0,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(1,1,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(1,2,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(1,3,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(1,4,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(1,5,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(1,6,this)"></td>
+    </tr>
+    <tr>
+      <td><img align="center" src="white.png" onclick="click_at(2,0,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(2,1,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(2,2,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(2,3,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(2,4,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(2,5,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(2,6,this)"></td>
+    </tr>  
+    <tr>
+      <td><img align="center" src="white.png" onclick="click_at(3,0,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(3,1,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(3,2,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(3,3,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(3,4,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(3,5,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(3,6,this)"></td>
+    </tr>
+    <tr>
+      <td><img align="center" src="white.png" onclick="click_at(4,0,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(4,1,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(4,2,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(4,3,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(4,4,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(4,5,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(4,6,this)"></td>
+    </tr>
+   <tr>
+      <td><img align="center" src="white.png" onclick="click_at(5,0,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(5,1,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(5,2,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(5,3,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(5,4,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(5,5,this)"></td>
+      <td><img align="center" src="white.png" onclick="click_at(5,6,this)"></td>
+    </tr>  
+  </tbody>
+</table>
+</div>
+<h2 id="msg"></h2>
+</body>
+</html>

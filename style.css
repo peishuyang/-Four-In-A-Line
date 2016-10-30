@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*科e互联特效基本框架CSS*/
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {margin:0;padding:0;-webkit-text-size-adjust: none}
+h1, h2, h3, h4, h5, h6{font-size:12px;font-weight:normal}
+body>div{margin:0pt;}
+div {text-align:left}
+a img {border:0}
+body { color: #333; text-align: center; font: 12px "微软雅黑"; }
+ul, ol, li {list-style-type:none;vertical-align:0}
+a {outline-style:none;color:#535353;text-decoration:none}
+a:hover { color: #D40000; text-decoration: none}
+.clear{height:0; overflow:hidden; clear:both}
+.button {display: inline-block;zoom: 1; *display: inline;vertical-align: baseline;margin: 0 2px;outline: none;cursor: pointer;text-align: center;text-decoration: none;font: 14px/100% Arial, Helvetica, sans-serif;padding:0.25em 0.6em 0.3em;text-shadow: 0 1px 1px rgba(0,0,0,.3);-webkit-border-radius: .5em; -moz-border-radius: .5em;border-radius: .5em;-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.red {color: #faddde;border: solid 1px #980c10;background: #d81b21;background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#A51715));background: -moz-linear-gradient(top,  #ed1c24,  #A51715);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+}
+.red:hover { background: #b61318; background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115)); background: -moz-linear-gradient(top,  #c9151b,  #a11115); filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115'); color:#fff;}
+.red:active {color: #de898c;background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');}
+.cor_bs,.cor_bs:hover{color:#ffffff;}
+.keBody{background:url(../images/bodyBg.jpg) repeat #333;}
+.keTitle{height:100px; line-height:100px; font-size:30px; font-family:'微软雅黑'; color:#FFF; text-align:center; background:url(../images/bodyBg3.jpg) repeat-x bottom left; font-weight:normal}
+.kePublic{ background: #e8e8e8; padding: 10px; }
+.keBottom{color:#FFF; padding-top:25px; line-height:28px; text-align:center; font-family:'微软雅黑'; background:url(../images/bodyBg2.jpg) repeat-x top left; padding-bottom:25px}
+.keTxtP{font-size:16px; color:#ffffff;}
+.keUrl{color:#FFF; font-size:30px;}
+.keUrl:hover{ text-decoration: underline; color: #FFF; }
+.mKeBanner,.mKeBanner div{text-align:center;}
+/*科e互联特效基本框架CSS结束，应用特效时，以上样式可删除*/
+.intro { position: relative; margin: 50px auto; color: #458ecc; width: 600px; font: 16px/26px "微软雅黑"; }
+button { position: relative; display: block; margin: 20px 120px; text-decoration: none; text-align: center; text-shadow: 2px 2px 2px #3a7faa; box-shadow: 0px 6px 0px #3a7faa, 0px 9px 25px rgba(0, 0, 0, 0.7); transition: all .1s ease; -webkit-transition: all .1s ease; color: white; background-color: #458ecc; border-radius: 8px; border: none; outline: 0 none; width: 220px; height: 60px; overflow: hidden; cursor: pointer; font: bold 28px/65px Arial; }
+button:active { box-shadow: 0px 3px 0px #3a7faa, 0px 3px 6px rgba(0, 0, 0, 0.9); top: 6px; }
+.main-text { position: absolute; left: 90px;bottom: 0.7px; }
+.submit { text-transform: uppercase; color: #efd959; }
+.sent-text { position: absolute; left: 40px; bottom:0.6spx;opacity: 0; }
+button.active .main-text { display: none; }
+button.active .sent-text { animation: sent 2s forwards; animation-delay: 2s; -webkit-animation: sent 2s forwards; -webkit-animation-delay: 2s; }
+.sub { float: left; padding: 0 0 0 0px; width: 45px; height: 45px; }
+button.active .sub { animation: drive 3s forwards; animation-delay: 2s; -webkit-animation: drive 3s forwards; -webkit-animation-delay: 2s; }
+.splash { float: left; margin-left: 30px; margin-top: -40px; transform: rotate(-10deg); -webkit-transform: rotate(-10deg); opacity: 0; }
+.splash-2 { float: right; margin-right: 30px; transform: rotate(10deg); -webkit-transform: rotate(10deg); }
+.submerge { position: absolute; top: 80px; border-radius: 0 0 10px 10px; left: 0; opacity: .7; }
+button.active .submerge { animation: submerge 2s forwards; -webkit-animation: submerge 2s forwards; }
+.return { position: relative; display: block; margin: auto; font-family: 'Lato', sans-serif; font-size: 22px; text-align: center; border: 2px solid #8ec6ef; padding: 0 15px; text-decoration: none; line-height: 40px; color: #8ec6ef; width: 150px; height: 40px; }
+.return:hover { color: #458ecc; border: 2px solid #458ecc; }
+ @keyframes submerge {  to {
+ transform: translateY(-50px);
+}
+}
+@keyframes drive {  to {
+ transform: translateX(140px);
+}
+}
+@keyframes sent {  to {
+ opacity: 1;
+}
+}
+@-webkit-keyframes submerge {  to {
+ -webkit-transform: translateY(-50px);
+}
+}
+@-webkit-keyframes drive {  to {
+ -webkit-transform: translateX(140px);
+}
+}
+@-webkit-keyframes sent {  to {
+ opacity: 1;
+}
+}
+@keyframes jump {  25% {
+ transform: translateY(-90px) rotate(-40deg);
+}
+ 75% {
+ transform: translateY(-90px) translateX(150px) rotate(40deg);
+}
+ 100% {
+ transform: translateY(0) translateX(150px);
+}
+}
+@keyframes water-splash {  0% {
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+}
+ 100% {
+ opacity: 0;
+}
+}
+@-webkit-keyframes jump {  25% {
+ -webkit-transform: translateY(-90px) rotate(-40deg);
+}
+ 75% {
+ -webkit-transform: translateY(-90px) translateX(150px) rotate(40deg);
+}
+ 100% {
+ -webkit-transform: translateY(0) translateX(150px);
+}
+}
+@-webkit-keyframes water-splash {  0% {
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+}
+ 100% {
+ opacity: 0;
+}
+}
+@media (min-width: 800px) {
+button { overflow: visible; }
+.submerge { display: none; }
+button.active .sub { animation: jump 4s forwards; }
+button.active .splash { animation: water-splash 3s forwards; }
+button.active .splash-2 { animation-delay: 3s; }
+button.active .sub { -webkit-animation: jump 4s forwards; }
+button.active .splash { -webkit-animation: water-splash 3s forwards; }
+button.active .splash-2 { -webkit-animation-delay: 3s; }
+}

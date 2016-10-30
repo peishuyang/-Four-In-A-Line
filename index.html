@@ -1,0 +1,67 @@
+<!-- Xie Bingshan, 
+  Wang Tingting,
+  Pei Shuyang -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Games</title>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/puzzle.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<!-- 插入 -->
+<!-- 插入 -->
+
+  </head>
+
+<body>
+ <div class="animated bounce" id="dowebok">
+<h9>WELCOME TO CONNECT FOUR</h9>
+</div> 
+
+<p> <img src="hello.png" /> </p>
+
+<div id="right">
+<div id="fish" class="htmleaf-container">
+  <div class="htmleaf-content bgcolor-3">
+    <button onclick="goto('index2.html',7000)"> <img class="splash" src="images/watersplash_3.svg" alt="Splash!" /> <img class="splash splash-2" src="images/watersplash_3.svg" alt="Splash!" /> <img class="sub" src="images/sublogo_16.svg" class="Submarine" /> <img class="submerge" src="images/submerge.svg" alt="Water" /> <span class="main-text"> <span class="submit">GO!</span></span> <span class="sent-text"> <span class="sent">Arrive!</span> </span> 
+    </button>
+  </div>
+</div>
+
+<div id="fish" class="htmleaf-container">
+  <div class="htmleaf-content bgcolor-3">
+    <button onclick="goto('index computer.php',7000)"> <img class="splash" src="images/watersplash_3.svg" alt="Splash!" /> <img class="splash splash-2" src="images/watersplash_3.svg" alt="Splash!" /> <img class="sub" src="images/sublogo_16.svg" class="Submarine" /> <img class="submerge" src="images/submerge.svg" alt="Water" />  <span class="main-text"> <span class="submit">GO!</span></span> <span class="sent-text"> <span class="sent">Arrive!</span> </span> 
+    </button>
+  </div>
+</div>
+    <script>
+      function goto(url,dalay)
+{
+          setTimeout("window.location='"+url+"'",dalay);
+}
+    </script>
+</div>
+
+<div id="left">
+<p> <a> Player against player </a>  </p>
+<p> <a> Player against Computer </a>  </p>
+</div>
+
+<script src='js/jquery submit.min.js'></script> 
+<script type="text/javascript">
+	  $(function(){
+	    button = $('button');
+
+	    button.click(function(e) {
+	      e.preventDefault();
+	      $(this).toggleClass('active');
+	    });
+
+	    $(window).resize(function(e) {
+	      button.removeClass('active');
+	    });
+	  });
+	</script>
+</body>
+</html>
